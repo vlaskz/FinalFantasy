@@ -4,3 +4,4 @@
 
 ##Links importantes:
 https://www.imagemagick.org/Magick++/Documentation.html
+https://download.imagemagick.org/ImageMagick/download/python/
