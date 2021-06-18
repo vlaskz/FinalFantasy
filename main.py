@@ -9,7 +9,7 @@ nonWhitePixels = []
 
 for y in range(0, imageSizeW):
     for x in range(0, imageSizeH):
-        pixVal = im.getpixel((x, y))
+        pixVal = im.getpixel((x,y))
         if pixVal != (255, 255, 255):
             nonWhitePixels.append([x, y])
 
@@ -50,5 +50,4 @@ im.show()
 
 exif_data = im._getexif()
 exif_data'''
-
 
