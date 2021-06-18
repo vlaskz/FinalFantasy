@@ -1,10 +1,11 @@
-from PIL import Image, ImageFilter
+#print("Olá Mundo!!!")
+from PIL import Image
 #Read image
 im = Image.open('pcb.jpg')
-#Display image
+Display image
 im.show()
 
-# ou o códido a seguir
+'''# ou o códido a seguir
 
 import HYP_Utils
 import sys
@@ -17,5 +18,5 @@ PIL_Version = Image.VERSION
 
 img_filename = "%s/pcb.jpg" % scriptDir
 im = Image.open(img_filename)
-im.show()
+im.show()'''
 
