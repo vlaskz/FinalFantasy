@@ -6,7 +6,7 @@ chardet==4.0.0
 colorama==0.4.4
 coloredlogs==15.0
 distlib==0.3.1
-Django==3.2
+Django==3.2.4
 et-xmlfile==1.1.0
 filelock==3.0.12
 humanfriendly==9.1
