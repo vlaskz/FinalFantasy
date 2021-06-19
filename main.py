@@ -2,7 +2,7 @@ from PIL import Image, ImageOps
 
 # PyQT5 imports
 import sys
-from PyQt5.QtWidgets import QApplication, QHBoxLayout, QPushButton, QVBoxLayout, QFormLayout, QLineEdit
+from PyQt5.QtWidgets import QApplication, QHBoxLayout, QPushButton, QVBoxLayout, QFormLayout, QLineEdit, QFileDialog
 from PyQt5.QtWidgets import QLabel
 from PyQt5.QtWidgets import QWidget
 
@@ -15,10 +15,11 @@ form_layout = QFormLayout()
 form_layout.addRow('Arquivo de entrada', QLineEdit())
 form_layout.addRow('Arquivo de saída', QLineEdit())
 page_layout.addLayout(form_layout)
+page_layout.addWidget(QFileDialog())
 page_layout.addWidget(QPushButton('Converter'))
 
 window.setLayout(page_layout)
-window.show()
+window.showMaximized()
 app.exec_()
 
 
