@@ -20,7 +20,7 @@ def achar_borda(im, opt, borda):
                 break
 
     if borda == 'dir':  # borda direita
-        for i in range(largura-1,0, -1):
+        for i in range(largura-1, 0, -1):
             pixVal = im.getpixel((i, my))
             if pixVal == cor:
                 break
@@ -32,7 +32,7 @@ def achar_borda(im, opt, borda):
                 break
 
     if borda == 'inf':  # borda inferior
-        for i in range(altura-1,0, -1):
+        for i in range(altura-1, 0, -1):
             pixVal = im.getpixel((mx, i))
             if pixVal == cor:
                 break
@@ -55,7 +55,7 @@ x1 = achar_borda(img, fotolito, 'esq')
 y1 = achar_borda(img, fotolito, 'sup')
 x2 = achar_borda(img, fotolito, 'dir')
 y2 = achar_borda(img, fotolito, 'inf')
-box = (x1, y1, x2, y2)
+box = (x1+1, y1+1, x2+0, y2+0)
 im2 = img.crop(box)
 im2.show()
 
