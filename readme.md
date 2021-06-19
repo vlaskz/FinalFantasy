@@ -13,6 +13,11 @@ Campus Multidisciplinar de Bom Jesus da Lapa - BA
 * https://pt.coredump.biz/questions/34202704/how-to-use-imagemagick-getimagepixelcolor-as-exec-command
 * https://www.php.net/manual/en/imagick.getimagepixelcolor.php
 * https://www.php.net/imagick
+* https://note.nkmk.me/en/python-pillow-invert/
+* https://note.nkmk.me/en/python-pillow-imagedraw/
+* https://imasters.com.br/back-end/primeiros-passos-com-pil-a-biblioteca-de-imagens-do-python
+* http://www.geeks3d.com/20100930/tutorial-first-steps-with-pil-python-imaging-library/
+* https://python-guide-pt-br.readthedocs.io/pt_BR/latest/scenarios/imaging.html
 
 Coordenado por MsC. Ademário José de Carvalho Neto
 
