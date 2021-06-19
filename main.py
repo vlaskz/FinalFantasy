@@ -39,6 +39,7 @@ def achar_borda(im, opt, borda):
     return i
 
 # -------------- MAIN ------------------
+###Sugestão: Adotar isso como argumento no método, via linha de comando.
 fotolito=False; # Se fotolito=True não invert, senão faz a inversão (quando for utilizado o método térmico)
 img = Image.open('pcb.bmp').convert('RGB')
 if fotolito==False:
@@ -59,3 +60,5 @@ box = (x1+1, y1+1, x2+0, y2+0)
 im2 = img.crop(box)
 im2.show()
 
+###salva como pdf.
+im2.save(r'.\\img.pdf')
