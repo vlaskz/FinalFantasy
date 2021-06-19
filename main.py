@@ -9,33 +9,33 @@ def achar_borda(im, opt, borda):
     # white = (255, 255, 255, 255)
     # black = (0, 0, 0, 255)
 
-    if opt == False:
+    if not opt:
         cor = (0, 0, 0)  # branco = (255) #preto = (0)
     else:
         cor = (255, 255, 255)
 
     if borda == 'esq':  # borda esquerda
         for i in range(0, largura):
-            pixVal = im.getpixel((i, my))
-            if pixVal == cor:
+            pix_val = im.getpixel((i, my))
+            if pix_val == cor:
                 break
 
     if borda == 'dir':  # borda direita
         for i in range(largura - 1, 0, -1):
-            pixVal = im.getpixel((i, my))
-            if pixVal == cor:
+            pix_val = im.getpixel((i, my))
+            if pix_val == cor:
                 break
 
     if borda == 'sup':  # borda superior
         for i in range(0, altura):
-            pixVal = im.getpixel((mx, i))
-            if pixVal == cor:
+            pix_val = im.getpixel((mx, i))
+            if pix_val == cor:
                 break
 
     if borda == 'inf':  # borda inferior
         for i in range(altura - 1, 0, -1):
-            pixVal = im.getpixel((mx, i))
-            if pixVal == cor:
+            pix_val = im.getpixel((mx, i))
+            if pix_val == cor:
                 break
     return i
 
@@ -46,11 +46,13 @@ def get_concat_h_repeat(im, column):
         dst.paste(im, (x * im.width, 0))
     return dst
 
+
 def get_concat_v_repeat(im, row):
     dst = Image.new('RGB', (im.width, im.height * row))
     for y in range(row):
         dst.paste(im, (0, y * im.height))
     return dst
+
 
 def get_concat_tile_repeat(im, row, column):
     dst_h = get_concat_h_repeat(im, column)
@@ -58,10 +60,10 @@ def get_concat_tile_repeat(im, row, column):
 
 
 # -------------- MAIN ------------------
-###Sugestão: Adotar isso como argumento no método, via linha de comando.
-fotolito = False;  # Se fotolito=True não invert, senão faz a inversão (quando for utilizado o método térmico)
+# Sugestão: Adotar isso como argumento no método, via linha de comando.
+fotolito = False  # Se fotolito=True não invert, senão faz a inversão (quando for utilizado o método térmico)
 img = Image.open('pcb.bmp').convert('RGB')
-if fotolito == False:
+if not fotolito:
     img = ImageOps.invert(img)
 img.show()
 
@@ -76,8 +78,9 @@ x2 = achar_borda(img, fotolito, 'dir')
 y2 = achar_borda(img, fotolito, 'inf')
 box = (x1 + 1, y1 + 1, x2 + 0, y2 + 0)
 im2 = img.crop(box)
+im2 = ImageOps.expand(im2, 20, fill='white')
 
 im3 = get_concat_tile_repeat(im2, 4, 2)
 im3.show()
-###salva como pdf.
+# salva como pdf.
 im3.save(r'.\\img.pdf')
