@@ -1,20 +1,47 @@
-
 from PIL import Image, ImageFilter
 
-im = Image.open('pix.png')
+def achar_posx():
 
-imageSizeW, imageSizeH = im.size
+
+im = Image.open('pcb.bmp')
+#imageSizeW, imageSizeH = im.size
+largura = im.size[0]
+altura = im.size[1]
+
+mx = round(largura/2)
+my = round(altura/2)
+
+print(largura, mx, altura, my);
+
+white = (255, 255, 255, 255)
+black = (0, 0, 0, 255)
+white = (255)
+black = (0)
 
 nonWhitePixels = []
 
-for y in range(0, imageSizeW):
+for i in range(0, largura):
+    pixVal = im.getpixel((i, my))
+    if pixVal == white:
+        #nonWhitePixels.append([i, my])
+        break
+    else:
+        nonWhitePixels.append([0, 0])
+print(i)
+print(nonWhitePixels)
+
+print('Cor: ' + str(im.getpixel((25, 180))))
+
+
+#nonWhitePixels = []
+'''for y in range(0, imageSizeW):
     for x in range(0, imageSizeH):
         pixVal = im.getpixel((x,y))
         if pixVal != (255, 255, 255):
             nonWhitePixels.append([x, y])
 
 print(nonWhitePixels)
-
+'''
 '''#Read image
 im = Image.open('pcb.jpg')
 #Display image
