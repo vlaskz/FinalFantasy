@@ -6,6 +6,7 @@ Campus Multidisciplinar de Bom Jesus da Lapa - BA
 ##Descrição
 * Software para processamento de imagens pré-fotólitos.
 ##Links importantes:
+* https://pillow.readthedocs.io/en/stable/reference/
 * https://www.imagemagick.org/Magick++/Documentation.html
 * https://download.imagemagick.org/ImageMagick/download/python/
 * https://legacy.imagemagick.org/discourse-server/viewtopic.php?t=19297
@@ -26,10 +27,12 @@ Auxiliado por Isaias Cerqueira Velasquez.
 #Licença: GNUv3;
 
 #ToDo's:
-* Integração Python/Pillow - ok
-* Aquisição de imagens via URL/arquivo - ok;
-* Reconhecimento de borda;
-* Arranjo
-* Impressão.
+ * Integração Python/Pillow - ok
+ * Aquisição de imagens via URL/arquivo - ok;
+ * Reconhecimento de borda - ok
+ 
+ * Salvamento em PDF - ok
+ * Arranjo 
+ * Impressão.
 
 #####Um projeto Eletron.
