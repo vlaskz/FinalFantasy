@@ -77,7 +77,7 @@ y2 = achar_borda(img, fotolito, 'inf')
 box = (x1 + 1, y1 + 1, x2 + 0, y2 + 0)
 im2 = img.crop(box)
 
-im3 = get_concat_tile_repeat(im2, 2, 3)
+im3 = get_concat_tile_repeat(im2, 4, 2)
 im3.show()
 ###salva como pdf.
 im3.save(r'.\\img.pdf')
