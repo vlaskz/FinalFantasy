@@ -39,3 +39,5 @@ virtualenv==20.4.4
 websocket-client==0.56.0
 wrapt==1.12.1
 xlrd==2.0.1
+
+PyQt5~=5.15.4
