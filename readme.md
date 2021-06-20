@@ -1,3 +1,4 @@
+![Brasão da UFOB](https://pt.wikipedia.org/wiki/Universidade_Federal_do_Oeste_da_Bahia#/media/Ficheiro:Bras%C3%A3o_da_UFOB.png)
 Universidade Federal do Oeste da Bahia - UFOB
 
 Campus Multidisciplinar de Bom Jesus da Lapa - BA
