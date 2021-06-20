@@ -15,6 +15,7 @@ class App(QWidget):
         self.width = 1024
         self.height = 768
         self.initUI()
+        sys.exit()
 
     def initUI(self):
         self.setWindowTitle(self.title)
@@ -27,13 +28,14 @@ class App(QWidget):
         im2.save(self.saveFileDialog())
 
 
+
     def openFileNameDialog(self):
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         filename, _ = QFileDialog.getOpenFileName(self,
-                                                  "QFileDialog.getOpenFileName()",
+                                                  "Selecione arquivo para conversão",
                                                   "",
-                                                  "All Files(*);;Python Files (*.py)",
+                                                  "Arquivos de Imagem(*.bmp | *.jpg | *.png);;Qualquer formato (*)",
                                                   options=options)
         if filename:
             return filename
@@ -53,11 +55,13 @@ class App(QWidget):
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
         filename, _ = QFileDialog.getSaveFileName(self,
-                                                  "QFileDialog.getOpenFileName()",
+                                                  "Salvar como",
                                                   "",
-                                                  "All Files(*);;Python Files (*.py)",
+                                                  "PDF(*.pdf)",
                                                   options=options)
-        if filename:
+        if '.' not in filename:
+            return filename+'.pdf'
+        else:
             return filename
 
 
