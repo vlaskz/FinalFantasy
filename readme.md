@@ -9,7 +9,7 @@ Campus Multidisciplinar de Bom Jesus da Lapa - BA
 * [Referência da API do Pillow](https://pillow.readthedocs.io/en/stable/reference/)
 * [Referência da API do ImageMagick(Magick++)](https://www.imagemagick.org/Magick++/Documentation.html)
 * [Download do Magick++ para Python](https://download.imagemagick.org/ImageMagick/download/python)
-##Outros tópicos:
+## Outros tópicos:
 * https://legacy.imagemagick.org/discourse-server/viewtopic.php?t=19297
 * https://legacy.imagemagick.org/discourse-server/search.php?keywords=python
 * https://pt.coredump.biz/questions/34202704/how-to-use-imagemagick-getimagepixelcolor-as-exec-command
