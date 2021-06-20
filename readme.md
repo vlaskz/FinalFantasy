@@ -1,15 +1,21 @@
-![Brasão da UFOB](https://www2.ufob.edu.br/images/icones/marca_teste_topo.png)
+![Brasão da UFOB](https://2020vestibular.com/wp-content/uploads/2017/12/ufob-2020-1.jpg)
+
 Universidade Federal do Oeste da Bahia - UFOB
 
-Campus Multidisciplinar de Bom Jesus da Lapa - BA
+Campus Multidisciplinar de Bom Jesus da Lapa
+
+Bacharelado em Engenharia Elétrica
 
 # Photon
+
 ## Descrição
 * Software para processamento de imagens pré-fotólitos.
+
 ## Links importantes:
 * [Referência da API do Pillow](https://pillow.readthedocs.io/en/stable/reference/)
 * [Referência da API do ImageMagick(Magick++)](https://www.imagemagick.org/Magick++/Documentation.html)
 * [Download do Magick++ para Python](https://download.imagemagick.org/ImageMagick/download/python)
+
 ## Outros tópicos:
 * https://legacy.imagemagick.org/discourse-server/viewtopic.php?t=19297
 * https://legacy.imagemagick.org/discourse-server/search.php?keywords=python
@@ -22,9 +28,8 @@ Campus Multidisciplinar de Bom Jesus da Lapa - BA
 * http://www.geeks3d.com/20100930/tutorial-first-steps-with-pil-python-imaging-library/
 * https://python-guide-pt-br.readthedocs.io/pt_BR/latest/scenarios/imaging.html
 
-Coordenado por [MsC. Ademário José de Carvalho Neto](https://github.com/ademariocarvalho)
-
-Auxiliado por [Isaias Cerqueira Velasquez](https://linkedin.com/in/vlaskz).
+Coordenado e desenvolvido por [MsC. Ademário José de Carvalho Neto](https://github.com/ademariocarvalho) e 
+[Isaias Cerqueira Velasquez](https://linkedin.com/in/vlaskz).
 
 ### Licença: GNUv3;
 
