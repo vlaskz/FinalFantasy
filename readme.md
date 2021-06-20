@@ -2,10 +2,10 @@ Universidade Federal do Oeste da Bahia - UFOB
 
 Campus Multidisciplinar de Bom Jesus da Lapa - BA
 
-#Photon
-##Descrição
+# Photon
+## Descrição
 * Software para processamento de imagens pré-fotólitos.
-##Links importantes:
+## Links importantes:
 * [Referência da API do Pillow](https://pillow.readthedocs.io/en/stable/reference/)
 * [Referência da API do ImageMagick(Magick++)](https://www.imagemagick.org/Magick++/Documentation.html)
 * [Download do Magick++ para Python](https://download.imagemagick.org/ImageMagick/download/python)
@@ -25,9 +25,9 @@ Coordenado por [MsC. Ademário José de Carvalho Neto](https://github.com/ademar
 
 Auxiliado por [Isaias Cerqueira Velasquez](https://linkedin.com/in/vlaskz).
 
-#Licença: GNUv3;
+### Licença: GNUv3;
 
-#ToDo's:
+# ToDo's:
  * Integração Python/Pillow - ok
  * Aquisição de imagens via URL/arquivo - ok;
  * Reconhecimento de borda - ok
