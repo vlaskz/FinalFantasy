@@ -35,7 +35,7 @@ class App(QWidget):
         filename, _ = QFileDialog.getOpenFileName(self,
                                                   "Selecione arquivo para conversão",
                                                   "",
-                                                  "Arquivos de Imagem(*.bmp | *.jpg | *.png);;Qualquer formato (*)",
+                                                  "Arquivos de Imagem(*.bmp | *.png);;Qualquer formato (*)",
                                                   options=options)
         if filename:
             return filename
@@ -46,7 +46,7 @@ class App(QWidget):
         filenames, _ = QFileDialog.getOpenFileNames(self,
                                                     "QFileDialog.getOpenFileNames()",
                                                     "",
-                                                    "All Files(*);;Python Files (*.py)",
+                                                    "All Files(*);;PDF Files (*.py)",
                                                     options=options)
         if filenames:
             return filenames

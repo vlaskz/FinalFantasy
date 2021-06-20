@@ -6,6 +6,11 @@ Campus Multidisciplinar de Bom Jesus da Lapa
 
 Bacharelado em Engenharia Elétrica
 
+Coordenado e desenvolvido por [MsC. Ademário José de Carvalho Neto](https://github.com/ademariocarvalho) e 
+[Isaias Cerqueira Velasquez](https://linkedin.com/in/vlaskz).
+
+### Licença: GNUv3
+
 # Photon
 
 ## Descrição
@@ -28,10 +33,7 @@ Bacharelado em Engenharia Elétrica
 * http://www.geeks3d.com/20100930/tutorial-first-steps-with-pil-python-imaging-library/
 * https://python-guide-pt-br.readthedocs.io/pt_BR/latest/scenarios/imaging.html
 
-Coordenado e desenvolvido por [MsC. Ademário José de Carvalho Neto](https://github.com/ademariocarvalho) e 
-[Isaias Cerqueira Velasquez](https://linkedin.com/in/vlaskz).
 
-### Licença: GNUv3;
 
 # ToDo's:
  * Integração Python/Pillow - ok
